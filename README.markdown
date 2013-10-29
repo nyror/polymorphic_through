@@ -40,3 +40,7 @@ create_table :comments do |t|
   t.references :commentable, polymorphic: true
 end
 ```
+
+
+![screen shot 2013-10-29 at 2 56 51 pm](https://f.cloud.github.com/assets/83296/1431260/ef4f0eb2-40cb-11e3-8ffd-f68eb9884468.png)
+
