@@ -34,8 +34,9 @@ end
 As you can see, there is a column called commentable_type, which stores the class name of associated object. The Migrations API actually gives you a one-line shortcut with the references method, which takes a polymorphic option:
 
 ```ruby
-create_table:commentsdo|t|
-t.text :body
-t.references :commentable, polymorphic: true
+
+create_table :comments do |t|
+  t.text :body
+  t.references :commentable, polymorphic: true
 end
 ```
