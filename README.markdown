@@ -20,10 +20,14 @@ rails g model Comment name content commentable:references{polymorphic}
 #### about the migration
 
 ```ruby
-classCreateComments<ActiveRecord::Migration def change
-create_table :comments do |t| t.text :body
-t.integer :commentable t.string :commentable_type
-end end
+class CreateComments<ActiveRecord::Migration 
+  def change
+    create_table :comments do |t|
+      t.text :body
+      t.integer :commentable
+      t.string :commentable_type
+    end 
+  end
 end
 ```
 
